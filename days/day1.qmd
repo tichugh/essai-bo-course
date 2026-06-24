@@ -1,7 +1,7 @@
 # Day 1: Foundations
 
 ## Slides
-* 📄 [Download Day 1 Lecture Slides (PDF)](../slides/lecture1.pdf)
+* 📄 [Download Day 1 Lecture Slides (PDF)](../slides/Day1_Part_1.pdf)
 
 ## Jupyter notebooks
 * 📓 [Download Notebook 1](../notebooks/day1/notebook1.ipynb)
@@ -10,4 +10,4 @@
 * 📝 [Download Exercise 1](../exercises/day1/exercise1.pdf)
 
 ## Self-study
-Add reading material and links here.
+Coming soon.
