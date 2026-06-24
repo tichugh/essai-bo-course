@@ -1,20 +1,14 @@
-
-# Day 4: Data-driven and Advanced Topics
+# Day 4: Multi-objective BO and Summary
 
 ## Slides
-Place PDF slides in:
+Coming soon
 
-`slides/day4/`
 
 ## Jupyter notebooks
-Place notebooks in:
-
-`notebooks/day4/`
+Coming soon
 
 ## Exercises
-Place exercises in:
-
-`exercises/day4/`
+Coming soon
 
 ## Self-study
-Add reading material and links here.
+Coming soon

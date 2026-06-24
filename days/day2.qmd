@@ -1,20 +1,15 @@
 
-# Day 2: Gaussian Processes and Acquisition Functions
+# Day 2: Gaussian Processes 
 
 ## Slides
-Place PDF slides in:
+Coming soon
 
-`slides/day2/`
 
 ## Jupyter notebooks
-Place notebooks in:
-
-`notebooks/day2/`
+Coming soon
 
 ## Exercises
-Place exercises in:
-
-`exercises/day2/`
+Coming soon
 
 ## Self-study
-Add reading material and links here.
+Coming soon

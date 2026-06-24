@@ -1,20 +1,14 @@
-
-# Day 3: Multi-objective Bayesian Optimisation
+# Day 3: Exploitation vs exploration 
 
 ## Slides
-Place PDF slides in:
+Coming soon
 
-`slides/day3/`
 
 ## Jupyter notebooks
-Place notebooks in:
-
-`notebooks/day3/`
+Coming soon
 
 ## Exercises
-Place exercises in:
-
-`exercises/day3/`
+Coming soon
 
 ## Self-study
-Add reading material and links here.
+Coming soon
