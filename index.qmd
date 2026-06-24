@@ -1,7 +1,7 @@
 
 # Data-Driven (Multi-Objective) Bayesian Optimisation
 
-**ESSAI 2026 Course Website**
+**ESSAI 2026**
 
 **Instructor:** Tinkle Chugh  
 **Affiliation:** University of Exeter, UK
