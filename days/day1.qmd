@@ -1,0 +1,20 @@
+
+# Day 1: Foundations
+
+## Slides
+Place PDF slides in:
+
+`slides/day1/`
+
+## Jupyter notebooks
+Place notebooks in:
+
+`notebooks/day1/`
+
+## Exercises
+Place exercises in:
+
+`exercises/day1/`
+
+## Self-study
+Add reading material and links here.

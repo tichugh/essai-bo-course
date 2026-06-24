@@ -1,0 +1,20 @@
+
+# Day 3: Multi-objective Bayesian Optimisation
+
+## Slides
+Place PDF slides in:
+
+`slides/day3/`
+
+## Jupyter notebooks
+Place notebooks in:
+
+`notebooks/day3/`
+
+## Exercises
+Place exercises in:
+
+`exercises/day3/`
+
+## Self-study
+Add reading material and links here.

@@ -1,0 +1,23 @@
+
+# Data-Driven (Multi-Objective) Bayesian Optimisation
+
+**ESSAI 2026 Course Website**
+
+**Instructor:** Tinkle Chugh  
+**Affiliation:** University of Exeter, UK
+
+Welcome to the course website. Materials will be uploaded daily.
+
+## Course Structure
+
+- Day 1: Foundations of Bayesian Optimisation
+- Day 2: Gaussian Processes and Acquisition Functions
+- Day 3: Multi-objective Bayesian Optimisation
+- Day 4: Data-driven and Advanced Topics
+
+## Folder structure
+
+- Slides
+- Jupyter notebooks
+- Exercises
+- Self-study material

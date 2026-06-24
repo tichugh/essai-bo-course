@@ -1,0 +1,14 @@
+
+# Resources
+
+## Software setup
+
+- Python
+- Jupyter Notebook
+- Recommended packages:
+  - numpy
+  - scipy
+  - matplotlib
+  - scikit-learn
+  - botorch
+  - gpytorch

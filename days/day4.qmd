@@ -1,0 +1,20 @@
+
+# Day 4: Data-driven and Advanced Topics
+
+## Slides
+Place PDF slides in:
+
+`slides/day4/`
+
+## Jupyter notebooks
+Place notebooks in:
+
+`notebooks/day4/`
+
+## Exercises
+Place exercises in:
+
+`exercises/day4/`
+
+## Self-study
+Add reading material and links here.
