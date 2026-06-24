@@ -1,10 +1,9 @@
-
 project:
   type: website
   resources:
     - "slides/"
     - "notebooks/"
-    - "exercises/
+    - "exercises/"
 
 website:
   title: "Data-Driven (Multi-Objective) Bayesian Optimisation"
