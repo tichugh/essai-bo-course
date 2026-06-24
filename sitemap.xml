@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tichugh.github.io/essai-bo-course/resources.html</loc>
-    <lastmod>2026-06-24T20:02:31.205Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tichugh.github.io/essai-bo-course/days/day3.html</loc>
-    <lastmod>2026-06-24T20:02:31.201Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tichugh.github.io/essai-bo-course/days/day4.html</loc>
-    <lastmod>2026-06-24T20:02:31.203Z</lastmod>
-  </url>
-  <url>
     <loc>https://tichugh.github.io/essai-bo-course/index.html</loc>
-    <lastmod>2026-06-24T20:02:31.204Z</lastmod>
+    <lastmod>2026-06-24T20:44:30.874Z</lastmod>
   </url>
   <url>
     <loc>https://tichugh.github.io/essai-bo-course/days/day2.html</loc>
-    <lastmod>2026-06-24T20:02:31.188Z</lastmod>
+    <lastmod>2026-06-24T20:44:30.874Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tichugh.github.io/essai-bo-course/days/day3.html</loc>
+    <lastmod>2026-06-24T20:44:30.874Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tichugh.github.io/essai-bo-course/days/day4.html</loc>
+    <lastmod>2026-06-24T20:44:30.874Z</lastmod>
   </url>
   <url>
     <loc>https://tichugh.github.io/essai-bo-course/days/day1.html</loc>
-    <lastmod>2026-06-24T20:02:31.177Z</lastmod>
+    <lastmod>2026-06-24T20:44:30.873Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tichugh.github.io/essai-bo-course/resources.html</loc>
+    <lastmod>2026-06-24T20:44:30.874Z</lastmod>
   </url>
 </urlset>

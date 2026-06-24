@@ -1,17 +1,59 @@
 [
   {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "Resources",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data-Driven (Multi-Objective) Bayesian Optimisation",
     "section": "",
-    "text": "Python\nJupyter Notebook\nRecommended packages:\n\nnumpy\nscipy\nmatplotlib\nscikit-learn\nbotorch\ngpytorch"
+    "text": "ESSAI 2026 Course Website\nInstructor: Tinkle Chugh\nAffiliation: University of Exeter, UK\nWelcome to the course website. Materials will be uploaded daily.\n\n\n\nDay 1: Foundations of Bayesian Optimisation\nDay 2: Gaussian Processes and Acquisition Functions\nDay 3: Multi-objective Bayesian Optimisation\nDay 4: Data-driven and Advanced Topics\n\n\n\n\n\nSlides\nJupyter notebooks\nExercises\nSelf-study material"
   },
   {
-    "objectID": "resources.html#software-setup",
-    "href": "resources.html#software-setup",
-    "title": "Resources",
+    "objectID": "index.html#course-structure",
+    "href": "index.html#course-structure",
+    "title": "Data-Driven (Multi-Objective) Bayesian Optimisation",
     "section": "",
-    "text": "Python\nJupyter Notebook\nRecommended packages:\n\nnumpy\nscipy\nmatplotlib\nscikit-learn\nbotorch\ngpytorch"
+    "text": "Day 1: Foundations of Bayesian Optimisation\nDay 2: Gaussian Processes and Acquisition Functions\nDay 3: Multi-objective Bayesian Optimisation\nDay 4: Data-driven and Advanced Topics"
+  },
+  {
+    "objectID": "index.html#folder-structure",
+    "href": "index.html#folder-structure",
+    "title": "Data-Driven (Multi-Objective) Bayesian Optimisation",
+    "section": "",
+    "text": "Slides\nJupyter notebooks\nExercises\nSelf-study material"
+  },
+  {
+    "objectID": "days/day2.html",
+    "href": "days/day2.html",
+    "title": "Day 2: Gaussian Processes and Acquisition Functions",
+    "section": "",
+    "text": "Place PDF slides in:\nslides/day2/\n\n\n\nPlace notebooks in:\nnotebooks/day2/\n\n\n\nPlace exercises in:\nexercises/day2/\n\n\n\nAdd reading material and links here."
+  },
+  {
+    "objectID": "days/day2.html#slides",
+    "href": "days/day2.html#slides",
+    "title": "Day 2: Gaussian Processes and Acquisition Functions",
+    "section": "",
+    "text": "Place PDF slides in:\nslides/day2/"
+  },
+  {
+    "objectID": "days/day2.html#jupyter-notebooks",
+    "href": "days/day2.html#jupyter-notebooks",
+    "title": "Day 2: Gaussian Processes and Acquisition Functions",
+    "section": "",
+    "text": "Place notebooks in:\nnotebooks/day2/"
+  },
+  {
+    "objectID": "days/day2.html#exercises",
+    "href": "days/day2.html#exercises",
+    "title": "Day 2: Gaussian Processes and Acquisition Functions",
+    "section": "",
+    "text": "Place exercises in:\nexercises/day2/"
+  },
+  {
+    "objectID": "days/day2.html#self-study",
+    "href": "days/day2.html#self-study",
+    "title": "Day 2: Gaussian Processes and Acquisition Functions",
+    "section": "",
+    "text": "Add reading material and links here."
   },
   {
     "objectID": "days/day3.html",
@@ -84,62 +126,6 @@
     "text": "Add reading material and links here."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Data-Driven (Multi-Objective) Bayesian Optimisation",
-    "section": "",
-    "text": "ESSAI 2026 Course Website\nInstructor: Tinkle Chugh\nAffiliation: University of Exeter, UK\nWelcome to the course website. Materials will be uploaded daily.\n\n\n\nDay 1: Foundations of Bayesian Optimisation\nDay 2: Gaussian Processes and Acquisition Functions\nDay 3: Multi-objective Bayesian Optimisation\nDay 4: Data-driven and Advanced Topics\n\n\n\n\n\nSlides\nJupyter notebooks\nExercises\nSelf-study material"
-  },
-  {
-    "objectID": "index.html#course-structure",
-    "href": "index.html#course-structure",
-    "title": "Data-Driven (Multi-Objective) Bayesian Optimisation",
-    "section": "",
-    "text": "Day 1: Foundations of Bayesian Optimisation\nDay 2: Gaussian Processes and Acquisition Functions\nDay 3: Multi-objective Bayesian Optimisation\nDay 4: Data-driven and Advanced Topics"
-  },
-  {
-    "objectID": "index.html#folder-structure",
-    "href": "index.html#folder-structure",
-    "title": "Data-Driven (Multi-Objective) Bayesian Optimisation",
-    "section": "",
-    "text": "Slides\nJupyter notebooks\nExercises\nSelf-study material"
-  },
-  {
-    "objectID": "days/day2.html",
-    "href": "days/day2.html",
-    "title": "Day 2: Gaussian Processes and Acquisition Functions",
-    "section": "",
-    "text": "Place PDF slides in:\nslides/day2/\n\n\n\nPlace notebooks in:\nnotebooks/day2/\n\n\n\nPlace exercises in:\nexercises/day2/\n\n\n\nAdd reading material and links here."
-  },
-  {
-    "objectID": "days/day2.html#slides",
-    "href": "days/day2.html#slides",
-    "title": "Day 2: Gaussian Processes and Acquisition Functions",
-    "section": "",
-    "text": "Place PDF slides in:\nslides/day2/"
-  },
-  {
-    "objectID": "days/day2.html#jupyter-notebooks",
-    "href": "days/day2.html#jupyter-notebooks",
-    "title": "Day 2: Gaussian Processes and Acquisition Functions",
-    "section": "",
-    "text": "Place notebooks in:\nnotebooks/day2/"
-  },
-  {
-    "objectID": "days/day2.html#exercises",
-    "href": "days/day2.html#exercises",
-    "title": "Day 2: Gaussian Processes and Acquisition Functions",
-    "section": "",
-    "text": "Place exercises in:\nexercises/day2/"
-  },
-  {
-    "objectID": "days/day2.html#self-study",
-    "href": "days/day2.html#self-study",
-    "title": "Day 2: Gaussian Processes and Acquisition Functions",
-    "section": "",
-    "text": "Add reading material and links here."
-  },
-  {
     "objectID": "days/day1.html",
     "href": "days/day1.html",
     "title": "Day 1: Foundations",
@@ -173,5 +159,19 @@
     "title": "Day 1: Foundations",
     "section": "",
     "text": "Add reading material and links here."
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Python\nJupyter Notebook\nRecommended packages:\n\nnumpy\nscipy\nmatplotlib\nscikit-learn\nbotorch\ngpytorch"
+  },
+  {
+    "objectID": "resources.html#software-setup",
+    "href": "resources.html#software-setup",
+    "title": "Resources",
+    "section": "",
+    "text": "Python\nJupyter Notebook\nRecommended packages:\n\nnumpy\nscipy\nmatplotlib\nscikit-learn\nbotorch\ngpytorch"
   }
 ]
