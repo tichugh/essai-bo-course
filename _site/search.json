@@ -1,0 +1,177 @@
+[
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Python\nJupyter Notebook\nRecommended packages:\n\nnumpy\nscipy\nmatplotlib\nscikit-learn\nbotorch\ngpytorch"
+  },
+  {
+    "objectID": "resources.html#software-setup",
+    "href": "resources.html#software-setup",
+    "title": "Resources",
+    "section": "",
+    "text": "Python\nJupyter Notebook\nRecommended packages:\n\nnumpy\nscipy\nmatplotlib\nscikit-learn\nbotorch\ngpytorch"
+  },
+  {
+    "objectID": "days/day3.html",
+    "href": "days/day3.html",
+    "title": "Day 3: Multi-objective Bayesian Optimisation",
+    "section": "",
+    "text": "Place PDF slides in:\nslides/day3/\n\n\n\nPlace notebooks in:\nnotebooks/day3/\n\n\n\nPlace exercises in:\nexercises/day3/\n\n\n\nAdd reading material and links here."
+  },
+  {
+    "objectID": "days/day3.html#slides",
+    "href": "days/day3.html#slides",
+    "title": "Day 3: Multi-objective Bayesian Optimisation",
+    "section": "",
+    "text": "Place PDF slides in:\nslides/day3/"
+  },
+  {
+    "objectID": "days/day3.html#jupyter-notebooks",
+    "href": "days/day3.html#jupyter-notebooks",
+    "title": "Day 3: Multi-objective Bayesian Optimisation",
+    "section": "",
+    "text": "Place notebooks in:\nnotebooks/day3/"
+  },
+  {
+    "objectID": "days/day3.html#exercises",
+    "href": "days/day3.html#exercises",
+    "title": "Day 3: Multi-objective Bayesian Optimisation",
+    "section": "",
+    "text": "Place exercises in:\nexercises/day3/"
+  },
+  {
+    "objectID": "days/day3.html#self-study",
+    "href": "days/day3.html#self-study",
+    "title": "Day 3: Multi-objective Bayesian Optimisation",
+    "section": "",
+    "text": "Add reading material and links here."
+  },
+  {
+    "objectID": "days/day4.html",
+    "href": "days/day4.html",
+    "title": "Day 4: Data-driven and Advanced Topics",
+    "section": "",
+    "text": "Place PDF slides in:\nslides/day4/\n\n\n\nPlace notebooks in:\nnotebooks/day4/\n\n\n\nPlace exercises in:\nexercises/day4/\n\n\n\nAdd reading material and links here."
+  },
+  {
+    "objectID": "days/day4.html#slides",
+    "href": "days/day4.html#slides",
+    "title": "Day 4: Data-driven and Advanced Topics",
+    "section": "",
+    "text": "Place PDF slides in:\nslides/day4/"
+  },
+  {
+    "objectID": "days/day4.html#jupyter-notebooks",
+    "href": "days/day4.html#jupyter-notebooks",
+    "title": "Day 4: Data-driven and Advanced Topics",
+    "section": "",
+    "text": "Place notebooks in:\nnotebooks/day4/"
+  },
+  {
+    "objectID": "days/day4.html#exercises",
+    "href": "days/day4.html#exercises",
+    "title": "Day 4: Data-driven and Advanced Topics",
+    "section": "",
+    "text": "Place exercises in:\nexercises/day4/"
+  },
+  {
+    "objectID": "days/day4.html#self-study",
+    "href": "days/day4.html#self-study",
+    "title": "Day 4: Data-driven and Advanced Topics",
+    "section": "",
+    "text": "Add reading material and links here."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data-Driven (Multi-Objective) Bayesian Optimisation",
+    "section": "",
+    "text": "ESSAI 2026 Course Website\nInstructor: Tinkle Chugh\nAffiliation: University of Exeter, UK\nWelcome to the course website. Materials will be uploaded daily.\n\n\n\nDay 1: Foundations of Bayesian Optimisation\nDay 2: Gaussian Processes and Acquisition Functions\nDay 3: Multi-objective Bayesian Optimisation\nDay 4: Data-driven and Advanced Topics\n\n\n\n\n\nSlides\nJupyter notebooks\nExercises\nSelf-study material"
+  },
+  {
+    "objectID": "index.html#course-structure",
+    "href": "index.html#course-structure",
+    "title": "Data-Driven (Multi-Objective) Bayesian Optimisation",
+    "section": "",
+    "text": "Day 1: Foundations of Bayesian Optimisation\nDay 2: Gaussian Processes and Acquisition Functions\nDay 3: Multi-objective Bayesian Optimisation\nDay 4: Data-driven and Advanced Topics"
+  },
+  {
+    "objectID": "index.html#folder-structure",
+    "href": "index.html#folder-structure",
+    "title": "Data-Driven (Multi-Objective) Bayesian Optimisation",
+    "section": "",
+    "text": "Slides\nJupyter notebooks\nExercises\nSelf-study material"
+  },
+  {
+    "objectID": "days/day2.html",
+    "href": "days/day2.html",
+    "title": "Day 2: Gaussian Processes and Acquisition Functions",
+    "section": "",
+    "text": "Place PDF slides in:\nslides/day2/\n\n\n\nPlace notebooks in:\nnotebooks/day2/\n\n\n\nPlace exercises in:\nexercises/day2/\n\n\n\nAdd reading material and links here."
+  },
+  {
+    "objectID": "days/day2.html#slides",
+    "href": "days/day2.html#slides",
+    "title": "Day 2: Gaussian Processes and Acquisition Functions",
+    "section": "",
+    "text": "Place PDF slides in:\nslides/day2/"
+  },
+  {
+    "objectID": "days/day2.html#jupyter-notebooks",
+    "href": "days/day2.html#jupyter-notebooks",
+    "title": "Day 2: Gaussian Processes and Acquisition Functions",
+    "section": "",
+    "text": "Place notebooks in:\nnotebooks/day2/"
+  },
+  {
+    "objectID": "days/day2.html#exercises",
+    "href": "days/day2.html#exercises",
+    "title": "Day 2: Gaussian Processes and Acquisition Functions",
+    "section": "",
+    "text": "Place exercises in:\nexercises/day2/"
+  },
+  {
+    "objectID": "days/day2.html#self-study",
+    "href": "days/day2.html#self-study",
+    "title": "Day 2: Gaussian Processes and Acquisition Functions",
+    "section": "",
+    "text": "Add reading material and links here."
+  },
+  {
+    "objectID": "days/day1.html",
+    "href": "days/day1.html",
+    "title": "Day 1: Foundations",
+    "section": "",
+    "text": "Place PDF slides in:\nslides/day1/\n\n\n\nPlace notebooks in:\nnotebooks/day1/\n\n\n\nPlace exercises in:\nexercises/day1/\n\n\n\nAdd reading material and links here."
+  },
+  {
+    "objectID": "days/day1.html#slides",
+    "href": "days/day1.html#slides",
+    "title": "Day 1: Foundations",
+    "section": "",
+    "text": "Place PDF slides in:\nslides/day1/"
+  },
+  {
+    "objectID": "days/day1.html#jupyter-notebooks",
+    "href": "days/day1.html#jupyter-notebooks",
+    "title": "Day 1: Foundations",
+    "section": "",
+    "text": "Place notebooks in:\nnotebooks/day1/"
+  },
+  {
+    "objectID": "days/day1.html#exercises",
+    "href": "days/day1.html#exercises",
+    "title": "Day 1: Foundations",
+    "section": "",
+    "text": "Place exercises in:\nexercises/day1/"
+  },
+  {
+    "objectID": "days/day1.html#self-study",
+    "href": "days/day1.html#self-study",
+    "title": "Day 1: Foundations",
+    "section": "",
+    "text": "Add reading material and links here."
+  }
+]
