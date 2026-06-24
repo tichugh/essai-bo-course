@@ -10,8 +10,8 @@ Welcome to the course website. Materials will be uploaded daily.
 
 ## Course Structure
 
-- [Day 1: Foundations of Bayesian Optimisation](days/day1.qmd)
-- [Day 2: Gaussian Processes and Acquisition Functions](days/day2.qmd)
-- [Day 3: Multi-objective Bayesian Optimisation](days/day3.qmd)
-- [Day 4: Data-driven and Advanced Topics](days/day4.qmd)
+- [Day 1: Intro to (multi-objective) Optimisation](days/day1.qmd)
+- [Day 2: Foundations of Gaussian Processes](days/day2.qmd)
+- [Day 3: Exploitation and Exploration Trade-off](days/day3.qmd)
+- [Day 4: Multi-objective Bayesian Optimisation and Summary](days/day4.qmd)
 
