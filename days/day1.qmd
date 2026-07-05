@@ -1,13 +1,14 @@
 # Day 1: Introduction
 
 ## Slides
-* 📄 [Download Day 1 Lecture Slides (PDF)](../slides/day1/Day_1_Part_1.pdf)
+* 📄 [Download Day 1 Lecture Slides - Part 1 (PDF)](../slides/day1/Day_1_Part_1.pdf)
+* 📄 [Download Day 1 Lecture Slides - Part 2 (PDF)](../slides/day1/Day_1_Part_2.pdf)
 
 ## Jupyter notebooks
-* 📓 [Download Notebook 1](../notebooks/day1/notebook1.ipynb)
+* 📓 [Download Notebook 1](../notebooks/day1/notebook_Day_1.ipynb)
 
 ## Exercises
-* 📝 [Download Exercise 1](../exercises/day1/exercise1.pdf)
+* 📝 [Download Exercise 1](../exercises/day1/Exercise_Day_1.pdf)
 
 ## Self-study
-Coming soon.
+Check this introductory report on Multi-objective Optimisation by Prof K. Deb: https://www.egr.msu.edu/~kdeb/papers/k2011003.pdf
