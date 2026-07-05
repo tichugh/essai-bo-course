@@ -9,6 +9,7 @@
 
 ## Exercises
 * 📝 [Download Exercise 1](../exercises/day1/Exercise_Day_1.pdf)
+* 📝 [Download Data Set](../exercises/day1/data_set.csv)
 
 ## Self-study
 Check this introductory report on Multi-objective Optimisation by Prof K. Deb: https://www.egr.msu.edu/~kdeb/papers/k2011003.pdf
