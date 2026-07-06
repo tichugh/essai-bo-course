@@ -1,13 +1,13 @@
 # Day 2: Gaussian Processes
 
 ## Slides
-* 📄 [Download Day 2 Lecture Slides - Part 1 (PDF)](../slides/day2/Day_2.pdf)
+* 📄 [Download Day 2 Lecture Slides (PDF)](../slides/day2/Day_2.pdf)
 
 ## Jupyter notebooks
 * 📓 Solution to task 2 here: https://scikit-learn.org/stable/auto_examples/gaussian_process/plot_gpr_co2.html
 
 ## Exercises
-* 📝 [Download Exercise 1](../exercises/day2/Exercise_Day_2.pdf)
+* 📝 [Download Exercise 2](../exercises/day2/Exercise_Day_2.pdf)
 * 📝 [Download Data Set](../exercises/day2/CO2_data_set.csv)
 
 ## Self-study
