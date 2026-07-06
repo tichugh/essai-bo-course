@@ -14,88 +14,46 @@
     "text": "Day 1: Intro to (multi-objective) Optimisation\nDay 2: Foundations of Gaussian Processes\nDay 3: Exploitation and Exploration Trade-off\nDay 4: Multi-objective Bayesian Optimisation and Summary"
   },
   {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "Resources",
+    "objectID": "slides/day2/GP_Prior_and_Posterior.html",
+    "href": "slides/day2/GP_Prior_and_Posterior.html",
+    "title": "Data-Driven (Multi-Objective) Bayesian Optimisation",
     "section": "",
-    "text": "Python\nJupyter Notebook\nRecommended packages:\n\nnumpy\nscipy\nmatplotlib\nscikit-learn\nbotorch\ngpytorch"
+    "text": "import scipy\nimport numpy as np\nfrom scipy.stats import norm\nimport matplotlib.pyplot as plt\n\n\ndef kernel_func(xa, xb):\n    xa = xa.reshape(-1,1)\n    xb = xb.reshape(-1,1)\n    sq_norm = -0.5 * scipy.spatial.distance.cdist(xa, xb, 'sqeuclidean')\n    return np.exp(sq_norm)\n\n\nx = np.linspace(-5,5,100)\nn_samples = len(x)\nK = kernel_func(x, x)\nvar = np.diag(K)\nsd_ = np.sqrt(var)\nmean_prior = np.zeros(n_samples)\n\nfor i in range(0,100):\n    f = np.random.multivariate_normal(mean = mean_prior,cov = K)\n    plt.plot(x,f)\n    \n\ny_up = mean_prior+2*sd_\ny_down = mean_prior-2*sd_\n\n# plt.plot(x,y_up,'black')\n# plt.plot(x,y_down,'black')\n# plt.fill_between(x,y_up,y_down,alpha=0.1,color = 'gray')\n\nplt.ylim(-3,3)\nplt.grid(False)\nplt.xlabel('x')\nplt.ylabel('f(x)')\nplt.show()\n\n\n\n\n\n\n\n\n\nX_train = np.array([-4,-2,-1,3])\ny_train = np.array([-2,0,1,-1])\nmean_y = np.mean(y_train)\ny = y_train-mean_y\n\nX_test = np.linspace(-5,5,100)\nK_data = kernel_func(X_train,X_train)\nK_test = kernel_func(X_test,X_train)\nK_data_inv = np.linalg.inv(K_data)\n\nmean_pred = np.dot(np.dot(K_test,K_data_inv),y) + mean_y\n\n# Uncertianty in predictions\nK_test_2 = kernel_func(X_test, X_test)\nCov_pred = K_test_2 - np.dot(np.dot(K_test, K_data_inv),np.transpose(K_test))\nstd_pred = np.sqrt(np.diag(Cov_pred))\n\nprint(std_pred.shape)\n\nfor i in range(0,100):\n    f = np.random.multivariate_normal(mean = mean_pred,cov = Cov_pred)\n    plt.plot(X_test,f)\n\nplt.scatter(X_train,y_train,s = 50, c='black',label = 'Data',zorder=2)\n# plt.plot(X_test,mean_pred)\ny_up = mean_pred+2*std_pred\ny_down = mean_pred-2*std_pred\n\n# plt.plot(x,y_up,'black')\n# plt.plot(x,y_down,'black')\n# plt.fill_between(x,y_up,y_down,alpha=0.1,color = 'gray')\n\nplt.ylim(-3,3)\nplt.grid(False)\nplt.xlabel('x')\nplt.ylabel('f(x)')\nplt.legend()\nplt.show()\n\n(100,)"
   },
   {
-    "objectID": "resources.html#software-setup",
-    "href": "resources.html#software-setup",
-    "title": "Resources",
+    "objectID": "days/day2.html",
+    "href": "days/day2.html",
+    "title": "Day 2: Gaussian Processes",
     "section": "",
-    "text": "Python\nJupyter Notebook\nRecommended packages:\n\nnumpy\nscipy\nmatplotlib\nscikit-learn\nbotorch\ngpytorch"
+    "text": "📄 Download Day 2 Lecture Slides - Part 1 (PDF)\n\n\n\n\n\n📓 Solution to task 2 here: https://scikit-learn.org/stable/auto_examples/gaussian_process/plot_gpr_co2.html\n\n\n\n\n\n📝 Download Exercise 1\n📝 Download Data Set\n\n\n\n\nCheck this book on Gaussian Processes (Chapters 1 - introduction, Chapter 2 - regression): https://gaussianprocess.org/gpml/"
   },
   {
-    "objectID": "days/day1.html",
-    "href": "days/day1.html",
-    "title": "Day 1: Introduction",
+    "objectID": "days/day2.html#slides",
+    "href": "days/day2.html#slides",
+    "title": "Day 2: Gaussian Processes",
     "section": "",
-    "text": "📄 Download Day 1 Lecture Slides - Part 1 (PDF)\n📄 Download Day 1 Lecture Slides - Part 2 (PDF)\n\n\n\n\n\n📓 Download Notebook 1\n\n\n\n\n\n📝 Download Exercise 1\n📝 Download Data Set\n\n\n\n\nCheck this introductory report on Multi-objective Optimisation by Prof K. Deb: https://www.egr.msu.edu/~kdeb/papers/k2011003.pdf"
+    "text": "📄 Download Day 2 Lecture Slides - Part 1 (PDF)"
   },
   {
-    "objectID": "days/day1.html#slides",
-    "href": "days/day1.html#slides",
-    "title": "Day 1: Introduction",
+    "objectID": "days/day2.html#jupyter-notebooks",
+    "href": "days/day2.html#jupyter-notebooks",
+    "title": "Day 2: Gaussian Processes",
     "section": "",
-    "text": "📄 Download Day 1 Lecture Slides - Part 1 (PDF)\n📄 Download Day 1 Lecture Slides - Part 2 (PDF)"
+    "text": "📓 Solution to task 2 here: https://scikit-learn.org/stable/auto_examples/gaussian_process/plot_gpr_co2.html"
   },
   {
-    "objectID": "days/day1.html#jupyter-notebooks",
-    "href": "days/day1.html#jupyter-notebooks",
-    "title": "Day 1: Introduction",
-    "section": "",
-    "text": "📓 Download Notebook 1"
-  },
-  {
-    "objectID": "days/day1.html#exercises",
-    "href": "days/day1.html#exercises",
-    "title": "Day 1: Introduction",
+    "objectID": "days/day2.html#exercises",
+    "href": "days/day2.html#exercises",
+    "title": "Day 2: Gaussian Processes",
     "section": "",
     "text": "📝 Download Exercise 1\n📝 Download Data Set"
   },
   {
-    "objectID": "days/day1.html#self-study",
-    "href": "days/day1.html#self-study",
-    "title": "Day 1: Introduction",
+    "objectID": "days/day2.html#self-study",
+    "href": "days/day2.html#self-study",
+    "title": "Day 2: Gaussian Processes",
     "section": "",
-    "text": "Check this introductory report on Multi-objective Optimisation by Prof K. Deb: https://www.egr.msu.edu/~kdeb/papers/k2011003.pdf"
-  },
-  {
-    "objectID": "days/day4.html",
-    "href": "days/day4.html",
-    "title": "Day 4: Multi-objective BO and Summary",
-    "section": "",
-    "text": "Coming soon\n\n\n\nComing soon\n\n\n\nComing soon\n\n\n\nComing soon"
-  },
-  {
-    "objectID": "days/day4.html#slides",
-    "href": "days/day4.html#slides",
-    "title": "Day 4: Multi-objective BO and Summary",
-    "section": "",
-    "text": "Coming soon"
-  },
-  {
-    "objectID": "days/day4.html#jupyter-notebooks",
-    "href": "days/day4.html#jupyter-notebooks",
-    "title": "Day 4: Multi-objective BO and Summary",
-    "section": "",
-    "text": "Coming soon"
-  },
-  {
-    "objectID": "days/day4.html#exercises",
-    "href": "days/day4.html#exercises",
-    "title": "Day 4: Multi-objective BO and Summary",
-    "section": "",
-    "text": "Coming soon"
-  },
-  {
-    "objectID": "days/day4.html#self-study",
-    "href": "days/day4.html#self-study",
-    "title": "Day 4: Multi-objective BO and Summary",
-    "section": "",
-    "text": "Coming soon"
+    "text": "Check this book on Gaussian Processes (Chapters 1 - introduction, Chapter 2 - regression): https://gaussianprocess.org/gpml/"
   },
   {
     "objectID": "days/day3.html",
@@ -133,39 +91,88 @@
     "text": "Coming soon"
   },
   {
-    "objectID": "days/day2.html",
-    "href": "days/day2.html",
-    "title": "Day 2: Gaussian Processes",
+    "objectID": "days/day4.html",
+    "href": "days/day4.html",
+    "title": "Day 4: Multi-objective BO and Summary",
     "section": "",
     "text": "Coming soon\n\n\n\nComing soon\n\n\n\nComing soon\n\n\n\nComing soon"
   },
   {
-    "objectID": "days/day2.html#slides",
-    "href": "days/day2.html#slides",
-    "title": "Day 2: Gaussian Processes",
+    "objectID": "days/day4.html#slides",
+    "href": "days/day4.html#slides",
+    "title": "Day 4: Multi-objective BO and Summary",
     "section": "",
     "text": "Coming soon"
   },
   {
-    "objectID": "days/day2.html#jupyter-notebooks",
-    "href": "days/day2.html#jupyter-notebooks",
-    "title": "Day 2: Gaussian Processes",
+    "objectID": "days/day4.html#jupyter-notebooks",
+    "href": "days/day4.html#jupyter-notebooks",
+    "title": "Day 4: Multi-objective BO and Summary",
     "section": "",
     "text": "Coming soon"
   },
   {
-    "objectID": "days/day2.html#exercises",
-    "href": "days/day2.html#exercises",
-    "title": "Day 2: Gaussian Processes",
+    "objectID": "days/day4.html#exercises",
+    "href": "days/day4.html#exercises",
+    "title": "Day 4: Multi-objective BO and Summary",
     "section": "",
     "text": "Coming soon"
   },
   {
-    "objectID": "days/day2.html#self-study",
-    "href": "days/day2.html#self-study",
-    "title": "Day 2: Gaussian Processes",
+    "objectID": "days/day4.html#self-study",
+    "href": "days/day4.html#self-study",
+    "title": "Day 4: Multi-objective BO and Summary",
     "section": "",
     "text": "Coming soon"
+  },
+  {
+    "objectID": "days/day1.html",
+    "href": "days/day1.html",
+    "title": "Day 1: Introduction",
+    "section": "",
+    "text": "📄 Download Day 1 Lecture Slides - Part 1 (PDF)\n📄 Download Day 1 Lecture Slides - Part 2 (PDF)\n\n\n\n\n\n📓 Download Notebook 1\n\n\n\n\n\n📝 Download Exercise 1\n📝 Download Data Set\n\n\n\n\nCheck this introductory report on Multi-objective Optimisation by Prof K. Deb: https://www.egr.msu.edu/~kdeb/papers/k2011003.pdf"
+  },
+  {
+    "objectID": "days/day1.html#slides",
+    "href": "days/day1.html#slides",
+    "title": "Day 1: Introduction",
+    "section": "",
+    "text": "📄 Download Day 1 Lecture Slides - Part 1 (PDF)\n📄 Download Day 1 Lecture Slides - Part 2 (PDF)"
+  },
+  {
+    "objectID": "days/day1.html#jupyter-notebooks",
+    "href": "days/day1.html#jupyter-notebooks",
+    "title": "Day 1: Introduction",
+    "section": "",
+    "text": "📓 Download Notebook 1"
+  },
+  {
+    "objectID": "days/day1.html#exercises",
+    "href": "days/day1.html#exercises",
+    "title": "Day 1: Introduction",
+    "section": "",
+    "text": "📝 Download Exercise 1\n📝 Download Data Set"
+  },
+  {
+    "objectID": "days/day1.html#self-study",
+    "href": "days/day1.html#self-study",
+    "title": "Day 1: Introduction",
+    "section": "",
+    "text": "Check this introductory report on Multi-objective Optimisation by Prof K. Deb: https://www.egr.msu.edu/~kdeb/papers/k2011003.pdf"
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Python\nJupyter Notebook\nRecommended packages:\n\nnumpy\nscipy\nmatplotlib\nscikit-learn\nbotorch\ngpytorch"
+  },
+  {
+    "objectID": "resources.html#software-setup",
+    "href": "resources.html#software-setup",
+    "title": "Resources",
+    "section": "",
+    "text": "Python\nJupyter Notebook\nRecommended packages:\n\nnumpy\nscipy\nmatplotlib\nscikit-learn\nbotorch\ngpytorch"
   },
   {
     "objectID": "notebooks/day1/notebook_Day_1.html",

@@ -2,30 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://tichugh.github.io/essai-bo-course/index.html</loc>
-    <lastmod>2026-07-05T19:56:36.498Z</lastmod>
+    <lastmod>2026-07-06T20:30:35.745Z</lastmod>
   </url>
   <url>
-    <loc>https://tichugh.github.io/essai-bo-course/resources.html</loc>
-    <lastmod>2026-07-05T19:56:36.498Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tichugh.github.io/essai-bo-course/days/day1.html</loc>
-    <lastmod>2026-07-05T19:56:36.497Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tichugh.github.io/essai-bo-course/days/day4.html</loc>
-    <lastmod>2026-07-05T19:56:36.497Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tichugh.github.io/essai-bo-course/days/day3.html</loc>
-    <lastmod>2026-07-05T19:56:36.497Z</lastmod>
+    <loc>https://tichugh.github.io/essai-bo-course/slides/day2/GP_Prior_and_Posterior.html</loc>
+    <lastmod>2026-07-06T20:30:35.779Z</lastmod>
   </url>
   <url>
     <loc>https://tichugh.github.io/essai-bo-course/days/day2.html</loc>
-    <lastmod>2026-07-05T19:56:36.497Z</lastmod>
+    <lastmod>2026-07-06T20:30:35.745Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tichugh.github.io/essai-bo-course/days/day3.html</loc>
+    <lastmod>2026-07-06T20:30:35.745Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tichugh.github.io/essai-bo-course/days/day4.html</loc>
+    <lastmod>2026-07-06T20:30:35.745Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tichugh.github.io/essai-bo-course/days/day1.html</loc>
+    <lastmod>2026-07-06T20:30:35.744Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tichugh.github.io/essai-bo-course/resources.html</loc>
+    <lastmod>2026-07-06T20:30:35.746Z</lastmod>
   </url>
   <url>
     <loc>https://tichugh.github.io/essai-bo-course/notebooks/day1/notebook_Day_1.html</loc>
-    <lastmod>2026-07-05T19:56:36.498Z</lastmod>
+    <lastmod>2026-07-06T20:30:35.746Z</lastmod>
   </url>
 </urlset>
