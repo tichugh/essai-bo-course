@@ -1,15 +1,14 @@
-
-# Day 2: Gaussian Processes 
+# Day 2: Gaussian Processes
 
 ## Slides
-Coming soon
-
+* 📄 [Download Day 2 Lecture Slides - Part 1 (PDF)](../slides/day2/Day_2.pdf)
 
 ## Jupyter notebooks
-Coming soon
+* 📓 Solution to task 2 here: https://scikit-learn.org/stable/auto_examples/gaussian_process/plot_gpr_co2.html
 
 ## Exercises
-Coming soon
+* 📝 [Download Exercise 1](../exercises/day2/Exercise_Day_2.pdf)
+* 📝 [Download Data Set](../exercises/day2/CO2_data_set.csv)
 
 ## Self-study
-Coming soon
+Check this book on Gaussian Processes (Chapters 1 - introduction, Chapter 2 - regression): https://gaussianprocess.org/gpml/
