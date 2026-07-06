@@ -25,14 +25,14 @@
     "href": "days/day2.html",
     "title": "Day 2: Gaussian Processes",
     "section": "",
-    "text": "📄 Download Day 2 Lecture Slides - Part 1 (PDF)\n\n\n\n\n\n📓 Solution to task 2 here: https://scikit-learn.org/stable/auto_examples/gaussian_process/plot_gpr_co2.html\n\n\n\n\n\n📝 Download Exercise 1\n📝 Download Data Set\n\n\n\n\nCheck this book on Gaussian Processes (Chapters 1 - introduction, Chapter 2 - regression): https://gaussianprocess.org/gpml/"
+    "text": "📄 Download Day 2 Lecture Slides (PDF)\n\n\n\n\n\n📓 Solution to task 2 here: https://scikit-learn.org/stable/auto_examples/gaussian_process/plot_gpr_co2.html\n\n\n\n\n\n📝 Download Exercise 2\n📝 Download Data Set\n\n\n\n\nCheck this book on Gaussian Processes (Chapters 1 - introduction, Chapter 2 - regression): https://gaussianprocess.org/gpml/"
   },
   {
     "objectID": "days/day2.html#slides",
     "href": "days/day2.html#slides",
     "title": "Day 2: Gaussian Processes",
     "section": "",
-    "text": "📄 Download Day 2 Lecture Slides - Part 1 (PDF)"
+    "text": "📄 Download Day 2 Lecture Slides (PDF)"
   },
   {
     "objectID": "days/day2.html#jupyter-notebooks",
@@ -46,7 +46,7 @@
     "href": "days/day2.html#exercises",
     "title": "Day 2: Gaussian Processes",
     "section": "",
-    "text": "📝 Download Exercise 1\n📝 Download Data Set"
+    "text": "📝 Download Exercise 2\n📝 Download Data Set"
   },
   {
     "objectID": "days/day2.html#self-study",
