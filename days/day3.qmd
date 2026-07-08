@@ -4,7 +4,7 @@
 * 📄 [Download Day 3 Lecture Slides (PDF)](../slides/day3/Day_3.pdf)
 
 ## Jupyter notebooks
-* 📓 [Download Notebook 1](../notebooks/day3/af_functions.ipynb)
+* 📓 [Download Notebook](../notebooks/day3/aq_functions.ipynb)
 
 ## Exercises
 * 📝 [Download Exercise 3](../exercises/day3/Exercise_Day_3.pdf)
