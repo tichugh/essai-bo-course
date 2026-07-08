@@ -1,14 +1,13 @@
-# Day 3: Exploitation vs exploration 
+# Day 3: Exploitation and Exploration
 
 ## Slides
-Coming soon
-
+* 📄 [Download Day 3 Lecture Slides (PDF)](../slides/day3/Day_3.pdf)
 
 ## Jupyter notebooks
-Coming soon
+* 📓 [Download Notebook 1](../notebooks/day3/af_functions.ipynb)
 
 ## Exercises
-Coming soon
+* 📝 [Download Exercise 3](../exercises/day3/Exercise_Day_3.pdf)
 
 ## Self-study
-Coming soon
+Check this book on Bayesian Optimisation: https://bayesoptbook.com/
