@@ -14,6 +14,13 @@
     "text": "Day 1: Intro to (multi-objective) Optimisation\nDay 2: Foundations of Gaussian Processes\nDay 3: Exploitation and Exploration Trade-off\nDay 4: Multi-objective Bayesian Optimisation and Summary"
   },
   {
+    "objectID": "notebooks/day1/notebook_Day_1.html",
+    "href": "notebooks/day1/notebook_Day_1.html",
+    "title": "Data-Driven (Multi-Objective) Bayesian Optimisation",
+    "section": "",
+    "text": "import numpy as np\nimport matplotlib.pyplot as plt\nfrom pymoo.indicators.hv import HV\n\n\n# Load the data set\napproximation_front = np.loadtxt('data_set.csv',delimiter=',')\nref_point = np.max(approximation_front,0) + 1 #it's arbitrary reference point\n\n\n# estimate the hypervolume\n\nind = HV(ref_point)\nprint(\"HV\", ind(approximation_front))\n\nHV 3.8279652805571587\n\n\n\n# Sensitivity w.r.t reference point\n\nref_points = np.array([np.max(approximation_front,0) + 1, np.max(approximation_front,0) + 10, \n                       np.max(approximation_front,0) + 100, np.max(approximation_front,0) + 1000])\n\nHV_values = []\nfor r in ref_points:\n    ind = HV(r)\n    HV_values.append(ind(approximation_front))\nprint(HV_values)\n\nplt.plot(HV_values, marker='o')\nplt.ylabel('Hypervolume')\nplt.show()\n\n[3.8279652805571587, 123.37119826469413, 10228.803528106066, 1002283.1268265197]"
+  },
+  {
     "objectID": "slides/day2/GP_Prior_and_Posterior.html",
     "href": "slides/day2/GP_Prior_and_Posterior.html",
     "title": "Data-Driven (Multi-Objective) Bayesian Optimisation",
@@ -58,37 +65,37 @@
   {
     "objectID": "days/day3.html",
     "href": "days/day3.html",
-    "title": "Day 3: Exploitation vs exploration",
+    "title": "Day 3: Exploitation and Exploration",
     "section": "",
-    "text": "Coming soon\n\n\n\nComing soon\n\n\n\nComing soon\n\n\n\nComing soon"
+    "text": "📄 Download Day 3 Lecture Slides (PDF)\n\n\n\n\n\n📓 Download Notebook 1\n\n\n\n\n\n📝 Download Exercise 3\n\n\n\n\nCheck this book on Bayesian Optimisation: https://bayesoptbook.com/"
   },
   {
     "objectID": "days/day3.html#slides",
     "href": "days/day3.html#slides",
-    "title": "Day 3: Exploitation vs exploration",
+    "title": "Day 3: Exploitation and Exploration",
     "section": "",
-    "text": "Coming soon"
+    "text": "📄 Download Day 3 Lecture Slides (PDF)"
   },
   {
     "objectID": "days/day3.html#jupyter-notebooks",
     "href": "days/day3.html#jupyter-notebooks",
-    "title": "Day 3: Exploitation vs exploration",
+    "title": "Day 3: Exploitation and Exploration",
     "section": "",
-    "text": "Coming soon"
+    "text": "📓 Download Notebook 1"
   },
   {
     "objectID": "days/day3.html#exercises",
     "href": "days/day3.html#exercises",
-    "title": "Day 3: Exploitation vs exploration",
+    "title": "Day 3: Exploitation and Exploration",
     "section": "",
-    "text": "Coming soon"
+    "text": "📝 Download Exercise 3"
   },
   {
     "objectID": "days/day3.html#self-study",
     "href": "days/day3.html#self-study",
-    "title": "Day 3: Exploitation vs exploration",
+    "title": "Day 3: Exploitation and Exploration",
     "section": "",
-    "text": "Coming soon"
+    "text": "Check this book on Bayesian Optimisation: https://bayesoptbook.com/"
   },
   {
     "objectID": "days/day4.html",
@@ -175,10 +182,17 @@
     "text": "Python\nJupyter Notebook\nRecommended packages:\n\nnumpy\nscipy\nmatplotlib\nscikit-learn\nbotorch\ngpytorch"
   },
   {
-    "objectID": "notebooks/day1/notebook_Day_1.html",
-    "href": "notebooks/day1/notebook_Day_1.html",
+    "objectID": "slides/day3/ei_pi_lcb.html",
+    "href": "slides/day3/ei_pi_lcb.html",
     "title": "Data-Driven (Multi-Objective) Bayesian Optimisation",
     "section": "",
-    "text": "import numpy as np\nimport matplotlib.pyplot as plt\nfrom pymoo.indicators.hv import HV\n\n\n# Load the data set\napproximation_front = np.loadtxt('data_set.csv',delimiter=',')\nref_point = np.max(approximation_front,0) + 1 #it's arbitrary reference point\n\n\n# estimate the hypervolume\n\nind = HV(ref_point)\nprint(\"HV\", ind(approximation_front))\n\nHV 3.8279652805571587\n\n\n\n# Sensitivity w.r.t reference point\n\nref_points = np.array([np.max(approximation_front,0) + 1, np.max(approximation_front,0) + 10, \n                       np.max(approximation_front,0) + 100, np.max(approximation_front,0) + 1000])\n\nHV_values = []\nfor r in ref_points:\n    ind = HV(r)\n    HV_values.append(ind(approximation_front))\nprint(HV_values)\n\nplt.plot(HV_values, marker='o')\nplt.ylabel('Hypervolume')\nplt.show()\n\n[3.8279652805571587, 123.37119826469413, 10228.803528106066, 1002283.1268265197]"
+    "text": "import numpy as np\nimport matplotlib.pyplot as plt\nfrom scipy.stats import norm\nfrom matplotlib.colors import LinearSegmentedColormap\nfrom sklearn.gaussian_process import GaussianProcessRegressor\nfrom sklearn.gaussian_process.kernels import RBF\nimport scipy\n\n\n# generate training data\ndef target(x):\n    \"\"\"\n    Function to optimise\n    \"\"\"\n    f = np.sin( 3 * np.pi * x**3) - 0.5 * np.sin(8 * np.pi * x**3)\n    return f\n\ndef phi(x):\n    return scipy.stats.norm.pdf(x)\n\ndef Phi(x):\n    return scipy.stats.norm.cdf(x)\n\ndef EI(mu, sigma, f_best):\n    s = (f_best - mu)/sigma\n    return (sigma*s * Phi(s) + sigma*phi(s))\n    \ndef PI(mu, sigma,f_best):\n    s = (f_best - mu)/sigma\n    return (Phi(s))\n\ndef LCB(mu, sigma,beta):\n    return (mu - beta*sigma)\n\n\nX_train = [0.1,  0.5,  0.75, 0.2, 0.59]\nX_train = np.atleast_2d(np.asarray(X_train)).T\ny_train = target(X_train)\n\nkernel = 1 * RBF(length_scale=1.0, length_scale_bounds=(1e-2, 1e2))\ngaussian_process = GaussianProcessRegressor(kernel=kernel, n_restarts_optimizer=9)\ngaussian_process.fit(X_train, y_train)\n\nX_test = np.linspace(0,1,1000)\nX_test = np.atleast_2d(np.asarray(X_test)).T\ny_test = target(X_test)\n\nmean_prediction, std_prediction = gaussian_process.predict(X_test, return_std=True)\n\n\n# 2. Render and Save Model Plot\n# Force exact standardized sizing\nfig1, ax1 = plt.subplots(figsize=(10, 5))\n\nax1.plot(X_test, y_test, label='Function', linestyle=\"dotted\", color='black')\nax1.scatter(X_train, y_train, color='red', zorder=5, label=\"Data\")\nax1.plot(X_test, mean_prediction, 'b-', alpha=0.7, label='GP Mean')\n\nax1.fill_between(\n    X_test.ravel(),\n    mean_prediction - 1.96 * std_prediction,\n    mean_prediction + 1.96 * std_prediction,\n    alpha=0.2,\n    color='blue',\n    label=r\"Uncertainty (95% CI)\",\n)\n\nax1.set_xlim(-0.05, 1.05)\nax1.set_ylim(-2.2, 2.2)\nax1.legend(loc='upper right')\nax1.set_xlabel(\"$x$\")\nax1.set_ylabel(\"$y$\")\nax1.set_title(\"Gaussian Process Model Fit\", fontsize=12, weight='bold')\nax1.grid(True, alpha=0.2)\n\nplt.tight_layout()\nplt.savefig('model.pdf', format='pdf', bbox_inches='tight')\nplt.show()\n\nfig2, ax2 = plt.subplots(figsize=(10, 5))\n\nax2.plot(X_test, EI_data, label='EI', color='darkorange', lw=2)\nax2.plot(X_test, PI_data, label='PI', color='green', lw=2)\nax2.plot(X_test, LCB_data, label='LCB', color='purple', lw=2)\n\nax2.set_xlim(-0.05, 1.05)\nax2.legend(loc='upper right')\nax2.set_xlabel(\"$x$\")\nax2.set_ylabel(\"Acquisition Utility\")\nax2.set_title(\"Acquisition Functions Landscape Comparison\", fontsize=12, weight='bold')\nax2.grid(True, alpha=0.2)\n\nplt.tight_layout()\nplt.savefig('af_landscape.pdf', format='pdf', bbox_inches='tight')\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport scipy.stats\nfrom sklearn.gaussian_process import GaussianProcessRegressor\nfrom sklearn.gaussian_process.kernels import RBF\nfrom matplotlib.colors import LinearSegmentedColormap\n\n# =====================================================================\n# 1. Setup Ground Truth & Acquisition Functions\n# =====================================================================\ndef target(x):\n    return np.sin(3 * np.pi * x**3) - 0.5 * np.sin(8 * np.pi * x**3)\n\ndef phi(x): return scipy.stats.norm.pdf(x)\ndef Phi(x): return scipy.stats.norm.cdf(x)\n\ndef calc_EI(mu, sigma, f_best):\n    s = (f_best - mu) / sigma\n    return sigma * s * Phi(s) + sigma * phi(s)\n    \ndef calc_PI(mu, sigma, f_best):\n    s = (f_best - mu) / sigma\n    return Phi(s)\n\ndef calc_LCB(mu, sigma, beta=2.0):\n    return mu - beta * sigma\n\n# =====================================================================\n# 2. Train Gaussian Process Model\n# =====================================================================\nX_train = np.array([0.1, 0.5, 0.75, 0.2, 0.59]).reshape(-1, 1)\ny_train = target(X_train).reshape(-1)\n\nkernel = 1 * RBF(length_scale=1.0, length_scale_bounds=(1e-2, 1e2))\ngaussian_process = GaussianProcessRegressor(kernel=kernel, n_restarts_optimizer=9)\ngaussian_process.fit(X_train, y_train)\n\nX_test = np.linspace(0, 1, 1000).reshape(-1, 1)\ny_test = target(X_test).reshape(-1)\nmean_prediction, std_prediction = gaussian_process.predict(X_test, return_std=True)\nf_best = np.min(y_train)\n\n# =====================================================================\n# 3. Setup Multi-Distribution (Ridge) Plotting Engine\n# =====================================================================\nx_slices = np.linspace(0.05, 0.95, 12)\nX_slices_2d = x_slices.reshape(-1, 1)\nslice_means, slice_stds = gaussian_process.predict(X_slices_2d, return_std=True)\n\n# FIXED: Exact case-sensitive Matplotlib colormap string identifiers\ncmap_pi = plt.colormaps['YlGn']    \ncmap_ei = plt.colormaps['PuBu']    \ncmap_lcb = plt.colormaps['plasma'] \n\nfig, axes = plt.subplots(3, 1, figsize=(13, 16), sharex=True, sharey=True)\ntitles = [\"PI Landscape\", \"EI Landscape\", \"LCB Landscape\"]\n\nscale_factor = 0.08  \n\nfor idx, ax in enumerate(axes):\n    # Plot true function and baseline elements\n    ax.plot(X_test, y_test, 'k:', alpha=0.6, label='True Function')\n    ax.plot(X_test, mean_prediction, 'b-', alpha=0.4, label='GP Mean')\n    ax.scatter(X_train, y_train, color='red', zorder=5, label='Data Points')\n    ax.axhline(f_best, color='red', linestyle='--', alpha=0.7, label=r'Current Best ($f^*$)')\n    \n    # Pre-calculate bounds across slices to calibrate the colorbars accurately\n    pi_vals = [calc_PI(m, s, f_best) for m, s in zip(slice_means, slice_stds)]\n    ei_vals = [calc_EI(m, s, f_best) for m, s in zip(slice_means, slice_stds)]\n    lcb_vals = [calc_LCB(m, s, beta=2.0) for m, s in zip(slice_means, slice_stds)]\n    \n    for i, x_coord in enumerate(x_slices):\n        mu = slice_means[i]\n        sigma = slice_stds[i]\n        \n        y_domain = np.linspace(mu - 3.5*sigma, mu + 3.5*sigma, 200)\n        pdf_vals = scipy.stats.norm.pdf(y_domain, mu, sigma)\n        x_curve = x_coord - pdf_vals * scale_factor\n        \n        if idx == 0:  # PI Visualization\n            # Normalize strictly between 0% and 100% probability\n            norm_val = pi_vals[i]\n            color = cmap_pi(min(norm_val * 1.2, 1.0)) # Scaled slightly for edge visibility\n            ax.plot(x_curve, y_domain, color=color, lw=2)\n            ax.fill_betweenx(y_domain, x_coord, x_curve, color=color, alpha=0.4)\n            \n        elif idx == 1:  # EI Visualization\n            # Scale color based on relative performance across observed slices\n            norm_val = min(ei_vals[i] / 0.3, 1.0) \n            color = cmap_ei(norm_val)\n            ax.plot(x_curve, y_domain, color=color, lw=2)\n            ax.fill_betweenx(y_domain, x_coord, x_curve, color=color, alpha=0.4)\n            \n        elif idx == 2:  # LCB Visualization\n            # Map LCB values down to clear spectrum ranges\n            norm_val = np.clip((lcb_vals[i] - (-2)) / 4, 0, 1)\n            color = cmap_lcb(norm_val)\n            ax.plot(x_curve, y_domain, color=color, lw=2)\n            ax.fill_betweenx(y_domain, x_coord, x_curve, color=color, alpha=0.3)\n            ax.plot(x_coord, lcb_vals[i], 'o', color='purple', markersize=6)\n            \n    ax.set_title(titles[idx], fontsize=13, weight='bold')\n    ax.set_ylabel(r'$y$')\n    ax.grid(True, alpha=0.15)\n    if idx == 0:\n        ax.legend(loc='upper right')\n\n    # =====================================================================\n    # ADDING COLORBAR LEGENDS FOR MAX/MIN TRACKING\n    # =====================================================================\n    if idx == 0:\n        sm = plt.cm.ScalarMappable(cmap=cmap_pi, norm=plt.Normalize(vmin=0, vmax=1))\n        cbar = fig.colorbar(sm, ax=ax, pad=0.02, shrink=0.8)\n        # cbar.set_label('PI', weight='bold')\n        cbar.set_ticks([0.0, 0.5, 1.0])\n        # cbar.set_ticklabels(['0.0 (MIN / Poor)', '0.5', '1.0 (MAX / Certain)'])\n    elif idx == 1:\n        sm = plt.cm.ScalarMappable(cmap=cmap_ei, norm=plt.Normalize(vmin=0, vmax=0.3))\n        cbar = fig.colorbar(sm, ax=ax, pad=0.02, shrink=0.8)\n        # cbar.set_label('EI', weight='bold')\n        cbar.set_ticks([0.0, 0.15, 0.3])\n        # cbar.set_ticklabels(['0.0 (MIN / No Upside)', '0.15', '0.3+ (MAX / High Reward)'])\n    elif idx == 2:\n        sm = plt.cm.ScalarMappable(cmap=cmap_lcb, norm=plt.Normalize(vmin=-2, vmax=2))\n        cbar = fig.colorbar(sm, ax=ax, pad=0.02, shrink=0.8)\n        # cbar.set_label('LCB', weight='bold')\n        cbar.set_ticks([-2, 0, 2])\n        # Remember: Minimization means lower objective values on y-axis are better!\n        # cbar.set_ticklabels(['-2.0 (MAX Utility / Best)', '0.0', '2.0 (MIN Utility / Worst)'])\n\naxes[2].set_xlabel(r'$x$')\naxes[2].set_ylim(-2.5, 2.5)\naxes[2].set_xlim(-0.05, 1.05)\n\nplt.tight_layout()\nplt.savefig('distribution_landscape_with_colorbars.pdf', format='pdf', bbox_inches='tight')\nplt.show()"
+  },
+  {
+    "objectID": "notebooks/day3/aq_functions.html",
+    "href": "notebooks/day3/aq_functions.html",
+    "title": "Data-Driven (Multi-Objective) Bayesian Optimisation",
+    "section": "",
+    "text": "import numpy as np\nimport matplotlib.pyplot as plt\nfrom sklearn.gaussian_process import GaussianProcessRegressor\nfrom sklearn.gaussian_process.kernels import RBF\nimport scipy\nfrom scipy.optimize import differential_evolution, minimize\nimport warnings\nwarnings.filterwarnings(\"ignore\")\n\n\ndef target(x):\n    \"\"\"\n    Function to optimise\n    \"\"\"\n    f = np.sin( 3 * np.pi * x**3) - 0.5 * np.sin(8 * np.pi * x**3)\n    return f\n\n\ndef phi(x):\n    return scipy.stats.norm.pdf(x)\n\ndef Phi(x):\n    return scipy.stats.norm.cdf(x)\n    \n# EI - to be maximised\ndef EI(mu, sigma, f_best):\n    s = (f_best - mu)/sigma\n    return (sigma*s * Phi(s) + sigma*phi(s))\n\n# PI - to be maximised\ndef PI(mu, sigma,f_best):\n    s = (f_best - mu)/sigma\n    return (Phi(s))\n\n# LCB - to be minimised\ndef LCB(mu, sigma,beta):\n    return (mu - beta*sigma)"
   }
 ]
