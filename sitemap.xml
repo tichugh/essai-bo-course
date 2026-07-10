@@ -2,42 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://tichugh.github.io/essai-bo-course/index.html</loc>
-    <lastmod>2026-07-08T07:48:48.191Z</lastmod>
+    <lastmod>2026-07-10T06:32:34.093Z</lastmod>
   </url>
   <url>
     <loc>https://tichugh.github.io/essai-bo-course/notebooks/day1/notebook_Day_1.html</loc>
-    <lastmod>2026-07-08T07:48:48.192Z</lastmod>
+    <lastmod>2026-07-10T06:32:34.094Z</lastmod>
   </url>
   <url>
     <loc>https://tichugh.github.io/essai-bo-course/slides/day2/GP_Prior_and_Posterior.html</loc>
-    <lastmod>2026-07-08T07:48:48.225Z</lastmod>
+    <lastmod>2026-07-10T06:32:34.127Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tichugh.github.io/essai-bo-course/slides/day4/sc_funs_demo.html</loc>
+    <lastmod>2026-07-10T06:32:34.162Z</lastmod>
   </url>
   <url>
     <loc>https://tichugh.github.io/essai-bo-course/days/day2.html</loc>
-    <lastmod>2026-07-08T07:48:48.190Z</lastmod>
+    <lastmod>2026-07-10T06:32:34.092Z</lastmod>
   </url>
   <url>
     <loc>https://tichugh.github.io/essai-bo-course/days/day3.html</loc>
-    <lastmod>2026-07-08T07:48:48.190Z</lastmod>
+    <lastmod>2026-07-10T06:32:34.092Z</lastmod>
   </url>
   <url>
     <loc>https://tichugh.github.io/essai-bo-course/days/day4.html</loc>
-    <lastmod>2026-07-08T07:48:48.190Z</lastmod>
+    <lastmod>2026-07-10T06:32:34.092Z</lastmod>
   </url>
   <url>
     <loc>https://tichugh.github.io/essai-bo-course/days/day1.html</loc>
-    <lastmod>2026-07-08T07:48:48.190Z</lastmod>
+    <lastmod>2026-07-10T06:32:34.091Z</lastmod>
   </url>
   <url>
     <loc>https://tichugh.github.io/essai-bo-course/resources.html</loc>
-    <lastmod>2026-07-08T07:48:48.192Z</lastmod>
+    <lastmod>2026-07-10T06:32:34.094Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tichugh.github.io/essai-bo-course/slides/day4/demo_mono_vs_multi.html</loc>
+    <lastmod>2026-07-10T06:32:34.160Z</lastmod>
   </url>
   <url>
     <loc>https://tichugh.github.io/essai-bo-course/slides/day3/ei_pi_lcb.html</loc>
-    <lastmod>2026-07-08T07:48:48.240Z</lastmod>
+    <lastmod>2026-07-10T06:32:34.141Z</lastmod>
   </url>
   <url>
     <loc>https://tichugh.github.io/essai-bo-course/notebooks/day3/aq_functions.html</loc>
-    <lastmod>2026-07-08T07:48:48.192Z</lastmod>
+    <lastmod>2026-07-10T06:32:34.094Z</lastmod>
   </url>
 </urlset>
