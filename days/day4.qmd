@@ -1,14 +1,13 @@
-# Day 4: Multi-objective BO and Summary
+# Day 4: Multi-objective BO
 
 ## Slides
-Coming soon
-
+* 📄 [Download Day 4 Lecture Slides (PDF)](../slides/day4/Day_4.pdf)
 
 ## Jupyter notebooks
-Coming soon
+* 📓 Coming soon
 
 ## Exercises
-Coming soon
+* 📝 Coming soon
 
 ## Self-study
-Coming soon
+Check this paper on mono- vs multi-surrogate: https://arxiv.org/abs/2208.07240
